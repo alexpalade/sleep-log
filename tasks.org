@@ -3,6 +3,11 @@
 ** TODO Add license
 ** TODO Add GDPR
 
+* Development
+** TODO Format on save with prettier
+** TODO Setup eslint
+** TODO Setup EditorConfig
+
 * Business logic
 ** TODO IndexedDB to store data
 *** TODO Tutorial on MDN
