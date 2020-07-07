@@ -1,0 +1,20 @@
+* General
+** TODO Add description
+** TODO Add license
+** TODO Add GDPR
+
+* Business logic
+** TODO IndexedDB to store data
+*** TODO Tutorial on MDN
+
+* Marketing
+** TODO Integrate Google Analytics
+
+* PWA
+** TODO Look into service worker updates
+
+* Testing
+
+* CI / DevOps
+** TODO Github actions: Run tests after push
+** TODO Github actions: Deploy to Surge if tests pass
