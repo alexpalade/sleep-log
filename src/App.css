@@ -3,12 +3,32 @@
 }
 
 body {
+  font-family: sans-serif;
   background-color: var(--secondary-color);
 }
 
 .App {
   text-align: center;
   color: white;
+  display: grid;
+  grid-gap: 10px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-position: inside;
+  list-style-type: none;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  height: 3rem;
+}
+
+.buttons button {
+  width: 3rem;
 }
 
 .nope-App-header {

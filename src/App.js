@@ -1,21 +1,65 @@
-import React from 'react';
-import './App.css';
-import Label from './Label';
+import React, { Component } from "react";
+import "./App.css";
+import SleepLog from "./SleepLog";
+import { addItem, getItems } from "./utils/database";
 
-function App() {
-  return (
-    <div className="App">
+class App extends Component {
 
-      <header className="App-header">
-        <h1>Sleep Log</h1>
-      </header>
+  constructor(props) {
+    super(props);
+    this.state = { items: [] };
+  }
 
-      <main>
-        <Label text='Work in progress' />
-      </main>
+  componentDidMount() {
+    this.updateItems();
+  }
 
-    </div>
-  );
+  displayActionSuccess(string) {
+    console.log("SUCCESS", string);
+  }
+
+  displayActionFailure(string) {
+    console.log("FAILURE", string);
+  }
+
+  async handleSleep() {
+    let date = new Date().getTime();
+    await addItem({ date: date, value: 'sleep' });
+    this.updateItems();
+  }
+
+  async handleWake() {
+    let date = new Date().getTime();
+    await addItem({ date: date, value: 'wake' });
+    this.updateItems();
+  }
+
+  async updateItems() {
+    this.setState({ items: await getItems() });
+  }
+
+  render() {
+    return (
+      <div className="App">
+
+        <header className="App-header">
+          <h1>Sleep Log</h1>
+        </header>
+
+        <div className='buttons'>
+          <button id="sleep" onClick={() => this.handleSleep()}>
+            Sleep
+          </button>
+          <button id="wake" onClick={() => this.handleWake()}>
+            Wake
+          </button>
+        </div>
+
+        <SleepLog items={this.state.items}/>
+
+      </div>
+    );
+  }
 }
 
 export default App;

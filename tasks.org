@@ -1,7 +1,11 @@
 * General
+** DONE Prepare React project
+** TODO Read CRA help again for hints
 ** TODO Add description
 ** TODO Add license
 ** TODO Add GDPR
+** TODO How to support timezones?
+** TODO Customize tracked names? (e.g. PC off)
 
 * Development
 ** TODO Format on save with prettier
