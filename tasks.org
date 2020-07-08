@@ -1,11 +1,12 @@
+#+TODO: TODO(t) MAYBE | DONE(d!) CANCELED(c@)
+
 * General
 ** DONE Prepare React project
 ** TODO Read CRA help again for hints
 ** TODO Add description
 ** TODO Add license
 ** TODO Add GDPR
-** TODO How to support timezones?
-** TODO Customize tracked names? (e.g. PC off)
+** MAYBE Change name and domain?
 
 * Development
 ** TODO Format on save with prettier
@@ -13,8 +14,10 @@
 ** TODO Setup EditorConfig
 
 * Business logic
-** TODO IndexedDB to store data
-*** TODO Tutorial on MDN
+** TODO How to support timezones?
+** MAYBE Customize tracked names? (e.g. PC off)
+** DONE IndexedDB to store data
+*** DONE Tutorial on MDN
 
 * Marketing
 ** TODO Integrate Google Analytics
