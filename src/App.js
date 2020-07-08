@@ -51,7 +51,7 @@ class App extends Component {
             Sleep
           </button>
           <button id="wake" onClick={() => this.handleWake()}>
-            Wake
+            Wake!
           </button>
         </div>
 
