@@ -21,6 +21,8 @@
 
 * Marketing
 ** TODO Integrate Google Analytics
+** TODO Basic promotion
+** TODO Canvas model
 
 * PWA
 ** TODO Look into service worker updates
